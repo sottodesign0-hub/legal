@@ -50,7 +50,15 @@ a:hover{color:var(--accent)}
 .site-footer__inner{max-width:var(--maxw);margin:0 auto;padding:28px 24px;font-size:.82rem;color:var(--ink-soft);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .site-footer a{color:var(--ink-soft);text-decoration:none;margin-right:16px}
 .site-footer a:hover{color:var(--accent)}
-@media (max-width:520px){body{font-size:15px}.info-table th{width:40%;white-space:normal}}
+@media (max-width:520px){
+  body{font-size:15px}
+  .info-table,.info-table tbody,.info-table tr,.info-table th,.info-table td{display:block;width:100%}
+  .info-table tr{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:10px}
+  .info-table tr:last-child{margin-bottom:0}
+  .info-table th,.info-table td{border:none;white-space:normal}
+  .info-table th{background:#f4efe6;font-size:.8rem;color:var(--ink-soft);padding:9px 16px}
+  .info-table td{padding:8px 16px 13px;font-size:.95rem}
+}
 </style>
 </head>
 <body>
